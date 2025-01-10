@@ -1,37 +1,112 @@
-.filter {
-  display: flex;
-  margin: 10px 0;
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+.Store {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
-.filter div {
-  padding: 5px 15px;
-  border: 1px solid;
-  margin-right: 10px;
+.CardsView {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.IconSwitch {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0px 15px 15px;
+}
+
+.IconSwitch-button {
+  color: grey;
   cursor: pointer;
 }
 
-.filter .active {
-  color: #ffffff;
-  background-color: #8a8a8a;
+.IconSwitch-button .material-icons {
+  font-size: 36px;
 }
 
-.project-list {
+.ShopCard {
   display: flex;
-}
-.column {
-  width: 33%;
-  margin-right: 10px;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+  margin: 20px 50px;
+  background-size: 300px 300px;
+  box-shadow: 0 8px 13px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.column:last-child {
-  margin-right: 0;
+.ShopCard-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 10px 0px;
+  transform: scale(0.9, 1.4);
 }
 
-.project-list img {
+.ShopCard-color {
+  font-size: 16px;
+}
+
+.ShopCard-container {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 175px;
+  color: rgb(161, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ShopCard-button {
+  padding: 5px 10px;
+  border: 2px solid rgb(161, 0, 0);
+  border-radius: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.ListView {
+  display: flex;
+  flex-direction: column;
+}
+
+.ShopItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
+  background-color: whitesmoke;
 }
 
-.project-list img:last-child {
-  margin-bottom: 0;
+.ShopItem-img {
+  width: 150px;
+  height: 80px;
+  background-size: 150px 150px;
+  background-position: 50% 70%;
+}
+
+.ShopItem-name {
+  font-size: 24px;
+  text-transform: uppercase;
+  transform: scale(0.9, 1.4);
+}
+
+.ShopItem-price {
+  color: rgb(161, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.ShopItem-button {
+  margin-right: 15px;
+  padding: 5px 10px;
+  border: 2px solid rgb(161, 0, 0);
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: rgb(161, 0, 0);
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }
